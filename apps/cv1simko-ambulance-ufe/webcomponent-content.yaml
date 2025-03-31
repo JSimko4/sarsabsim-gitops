@@ -1,0 +1,18 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: cv1sarsabsim-ambulance-ufe-content
+spec:
+  microFrontend: cv1sarsabsim-ambulance-ufe
+  element: cv1sarsabsim-ambulance-wl-app
+  attributes:
+    - name: base-path
+      value: /cv1sarsabsim-ambulance-wl/
+    - name: api-base
+      value: http://localhost:5000/api
+    - name: ambulance-id
+      value: bobulova
+  displayRules:
+    - allOf:
+      - context-name: main-content
+      - path: "^(\\.?/)?cv1sarsabsim-ambulance-wl(/.*)?$"
