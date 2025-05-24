@@ -9,6 +9,11 @@ labels:
 
 resources:
 - ../../../apps/cv1sarsabsim-ambulance-ufe
+- ../../../apps/cv1sarsabsim-ambulance-webapi
+
+patches:
+- path: patches/ambulance-webapi.service.yaml
 
 components:
 - ../../../components/version-developers
+- https://github.com/psabol571/sarsabsim-webapi//deployments/kustomize/components/mongodb
