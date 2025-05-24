@@ -12,7 +12,7 @@ labels:
 
 resources:
 - ../../../apps/cv1sarsabsim-ambulance-ufe
-
+- ../../../apps/cv1sarsabsim-ambulance-webapi
 
 components:
 - ../../../components/version-release
